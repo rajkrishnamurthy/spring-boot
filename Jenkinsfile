@@ -1,9 +1,8 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('Stage1') {
       steps {
-        sh 'ls -alrt'
         sh 'cat /var/jenkins_home/jobs/atmosphere/config.xml'
       }
     }

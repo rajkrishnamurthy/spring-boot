@@ -4,7 +4,7 @@ pipeline {
     stage('Stage1') {
       steps {
         echo 'Test Message (params.AO_HOST)'
-        echo 'ls -alrt'
+        sh 'ls -alrt'
       }
     }
   }

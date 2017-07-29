@@ -4,7 +4,7 @@ pipeline {
     stage('Stage1') {
       steps {
         echo 'Test Message (params.AO_HOST)'
-        sh 'ls -alrt'
+        sh 'ls'
         sh 'cat /var/jenkins_home/jobs/atmosphere/config.xml'
       }
     }

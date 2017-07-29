@@ -4,7 +4,7 @@ pipeline {
     stage('Stage1') {
       steps {
         sh 'cat /var/jenkins_home/jobs/atmosphere/config.xml'
-        echo '$AO_HOST'
+        echo 'echo $AO_HOST'
       }
     }
   }

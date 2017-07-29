@@ -5,8 +5,7 @@ pipeline {
       steps {
         echo 'Test Message (params.AO_HOST)'
         sh 'ls -alrt'
-        sh '''#!/bin/sh
-cat /var/jenkins_home/jobs/atmosphere/config.xml'''
+        sh 'cat /var/jenkins_home/jobs/atmosphere/config.xml'
       }
     }
   }

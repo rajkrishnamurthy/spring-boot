@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Print Message') {
       steps {
-        echo 'Test Message ${params.AO_HOST}'
+        echo 'Test Message ${AO_HOST}'
       }
     }
   }

@@ -1,10 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        echo 'Test Message'
-        sh 'go Connect2AOHost {AO_HOST}'
+        echo 'Test Message {AO_HOST}'
       }
     }
   }

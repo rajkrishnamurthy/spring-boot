@@ -1,9 +1,9 @@
 pipeline {
   agent none
   stages {
-    stage('Print Message') {
+    stage('Stage1') {
       steps {
-        echo 'Test Message ${params.AO_HOST}'
+        echo 'Test Message (params.AO_HOST)'
       }
     }
   }
